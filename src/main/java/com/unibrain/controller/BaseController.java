@@ -25,7 +25,7 @@ public class BaseController {
 	public String getEncryptedValue(String valueForEncode) {
 		final String KEY = "ffea52a9ae99bbcb";
 		String encodedValue = encryptDecryptUtil.aesEncrypt(valueForEncode, KEY);
-		encodedValue = ((encodedValue.contains("/") ? encodedValue.replace("/", "92AS") : encodedValue));
+		encodedValue = ((encodedValue.contains("/") ?  encodedValue.replace("/", "92AS") : encodedValue)); // a
 		return encodedValue;
 	}
 
